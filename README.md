@@ -9,8 +9,7 @@ sudo apt-get install qemu-system-misc gcc-riscv64-unknown-elf
 ```
 2) Build and run:
 ```
-make            # builds kernel.bin with riscv64-unknown-elf-gcc
-qemu-system-riscv64 -machine virt -nographic -bios none -kernel kernel.bin
+./runqemu.sh
 ```
 Inside QEMU you land at `$` (shell). `Ctrl-A` then `x` exits QEMU.
 
